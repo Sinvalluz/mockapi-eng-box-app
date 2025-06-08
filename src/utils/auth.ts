@@ -17,7 +17,7 @@ export let usuarios: Usuario[] = [];
 
 // Função para carregar usuários do arquivo JSON
 export async function carregarUsuarios() {
-  const filePath = path.join(__dirname, "..", "..", "usuarios.json");
+  const filePath = path.join(__dirname, "..", "..", "public", "usuarios.json");
   const data = await readFile(filePath, "utf-8");
   usuarios = JSON.parse(data);
 }
