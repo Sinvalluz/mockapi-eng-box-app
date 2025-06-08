@@ -12,6 +12,9 @@ app.register(jwt, {
 
 app.register(usuarioRoutes, { prefix: "/api/usuario" });
 app.register(receitasRoutes, { prefix: "/api/receitas" });
+app.get("/", async (_, reply) => {
+  return reply.send({ message: "API is running" });
+});
 
 const start = async () => {
   try {
