@@ -14,6 +14,9 @@ app.register(fastify_jwt_1.default, {
 });
 app.register(usuario_1.default, { prefix: "/api/usuario" });
 app.register(receitas_1.default, { prefix: "/api/receitas" });
+app.get("/", async (_, reply) => {
+    return reply.send({ message: "API is running" });
+});
 const start = async () => {
     try {
         await app.listen({ port: 3000, host: "0.0.0.0" });

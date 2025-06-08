@@ -11,7 +11,7 @@ const path_1 = __importDefault(require("path"));
 exports.usuarios = [];
 // Função para carregar usuários do arquivo JSON
 async function carregarUsuarios() {
-    const filePath = path_1.default.join(__dirname, "..", "..", "usuarios.json");
+    const filePath = path_1.default.join(__dirname, "..", "..", "public", "usuarios.json");
     const data = await (0, promises_1.readFile)(filePath, "utf-8");
     exports.usuarios = JSON.parse(data);
 }
