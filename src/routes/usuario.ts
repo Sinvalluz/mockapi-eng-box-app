@@ -1,8 +1,6 @@
 import { FastifyInstance } from "fastify";
 import { usuarios, Usuario } from "../utils/auth";
 
-let currentId = 1;
-
 export default async function usuarioRoutes(app: FastifyInstance) {
   // POST /api/usuario
   app.post("/", async (request, reply) => {
@@ -15,7 +13,7 @@ export default async function usuarioRoutes(app: FastifyInstance) {
       telefone: data.telefone,
       nivelConsciencia: data.nivelConsciencia,
       isMonitor: data.isMonitor,
-      fotoUsu: data.fotoUsu,
+      profilePhotoUrl: data.profilePhotoUrl,
       token: data.token,
     };
 
@@ -45,10 +43,14 @@ export default async function usuarioRoutes(app: FastifyInstance) {
       return reply.status(401).send({ error: "Credenciais inválidas" });
     }
 
-    console.log(usuario);
     return reply.send({
       message: "Login bem-sucedido",
       email: usuario.email,
+      nome: usuario.nome,
+      telefone: usuario.telefone,
+      nivelConsciencia: usuario.nivelConsciencia,
+      isMonitor: usuario.isMonitor,
+      profilePhotoUrl: usuario.profilePhotoUrl,
       token: usuario.token,
     });
   });
@@ -56,5 +58,48 @@ export default async function usuarioRoutes(app: FastifyInstance) {
   // GET /api/usuario
   app.get("/", async (_, reply) => {
     return reply.send(usuarios.map(({ senha, ...rest }) => rest)); // remove senha
+  });
+
+  app.get("/:email", async (request, reply) => {
+    const { email } = request.params as { email: string };
+    const usuario = usuarios.find((u) => u.email === email);
+    if (!usuario) {
+      return reply.status(404).send({ error: "Usuário não encontrado" });
+    }
+    return reply.send({
+      email: usuario.email,
+      nome: usuario.nome,
+      telefone: usuario.telefone,
+      nivelConsciencia: usuario.nivelConsciencia,
+      isMonitor: usuario.isMonitor,
+      profilePhotoUrl: usuario.profilePhotoUrl,
+    });
+  });
+
+  // put /api/usuario/:email
+  app.put("/:email", async (request, reply) => {
+    const { email } = request.params as { email: string };
+    const { nivelConsciencia } = request.body as { nivelConsciencia: number };
+
+    // Encontra o usuário pelo email
+    const usuarioIndex = usuarios.findIndex((u) => u.email === email);
+
+    if (usuarioIndex === -1) {
+      return reply.status(404).send({ error: "Usuário não encontrado" });
+    }
+
+    // Atualiza o nível de consciência
+    usuarios[usuarioIndex] = {
+      ...usuarios[usuarioIndex],
+      nivelConsciencia: nivelConsciencia,
+    };
+
+    return reply.send({
+      message: "Nível de consciência atualizado com sucesso",
+      usuario: {
+        email: usuarios[usuarioIndex].email,
+        nivelConsciencia: usuarios[usuarioIndex].nivelConsciencia,
+      },
+    });
   });
 }

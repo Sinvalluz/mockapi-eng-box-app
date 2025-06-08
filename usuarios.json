@@ -1,0 +1,102 @@
+[
+  {
+    "email": "ana.souza@testemail.com",
+    "token": "token001",
+    "senha": "senhaAna123",
+    "nome": "Ana Souza",
+    "telefone": "11999887766",
+    "nivelConsciencia": 2,
+    "isMonitor": true,
+    "profilePhotoUrl": "https://cataas.com/cat?id=5"
+  },
+  {
+    "email": "bruno.lima@empresa.org",
+    "token": "token002",
+    "senha": "brunoSenha321",
+    "nome": "Bruno Lima",
+    "telefone": "21988776655",
+    "nivelConsciencia": 3,
+    "isMonitor": false,
+    "profilePhotoUrl": "https://cataas.com/cat?id=4"
+  },
+  {
+    "email": "carla.mendes@teste.com",
+    "token": "token003",
+    "senha": "carlaPass456",
+    "nome": "Carla Mendes",
+    "telefone": "31977665544",
+    "nivelConsciencia": 1,
+    "isMonitor": false,
+    "profilePhotoUrl": "https://cataas.com/cat?id=1"
+  },
+  {
+    "email": "davi.rocha@email.net",
+    "token": "token004",
+    "senha": "senhaDavi789",
+    "nome": "Davi Rocha",
+    "telefone": "21912345678",
+    "nivelConsciencia": 2,
+    "isMonitor": true,
+    "profilePhotoUrl": "https://cataas.com/cat?id=2"
+  },
+  {
+    "email": "erika.lopes@demo.com",
+    "token": "token005",
+    "senha": "erikaSenha000",
+    "nome": "Erika Lopes",
+    "telefone": "11933445566",
+    "nivelConsciencia": 3,
+    "isMonitor": false,
+    "profilePhotoUrl": "https://cataas.com/cat?id=3"
+  },
+  {
+    "email": "felipe.santos@dominio.com",
+    "token": "token006",
+    "senha": "felipe123",
+    "nome": "Felipe Santos",
+    "telefone": "11987654321",
+    "nivelConsciencia": 1,
+    "isMonitor": true,
+    "profilePhotoUrl": "https://cataas.com/cat?id=6"
+  },
+  {
+    "email": "giovana.alves@testmail.com",
+    "token": "token007",
+    "senha": "gigiPass999",
+    "nome": "Giovana Alves",
+    "telefone": "21976543210",
+    "nivelConsciencia": 2,
+    "isMonitor": false,
+    "profilePhotoUrl": "https://cataas.com/cat?id=7"
+  },
+  {
+    "email": "henrique.ferraz@exemplo.com",
+    "token": "token008",
+    "senha": "henriqueSenha456",
+    "nome": "Henrique Ferraz",
+    "telefone": "11944556677",
+    "nivelConsciencia": 3,
+    "isMonitor": false,
+    "profilePhotoUrl": "https://cataas.com/cat?id=8"
+  },
+  {
+    "email": "isabela.ramos@site.com",
+    "token": "token009",
+    "senha": "isabela2025",
+    "nome": "Isabela Ramos",
+    "telefone": "31999887755",
+    "nivelConsciencia": 2,
+    "isMonitor": true,
+    "profilePhotoUrl": "https://cataas.com/cat?id=9"
+  },
+  {
+    "email": "joao.pedro@meumail.com",
+    "token": "token010",
+    "senha": "joaoSenha111",
+    "nome": "João Pedro",
+    "telefone": "21933221100",
+    "nivelConsciencia": 1,
+    "isMonitor": false,
+    "profilePhotoUrl": "https://cataas.com/cat?id=10"
+  }
+]

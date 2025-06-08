@@ -1,6 +1,8 @@
 import Fastify from "fastify";
 import jwt from "fastify-jwt";
 import usuarioRoutes from "./routes/usuario";
+import receitasRoutes from "./routes/receitas";
+import { carregarUsuarios } from "./utils/auth";
 
 const app = Fastify();
 
@@ -9,10 +11,12 @@ app.register(jwt, {
 });
 
 app.register(usuarioRoutes, { prefix: "/api/usuario" });
+app.register(receitasRoutes, { prefix: "/api/receitas" });
 
 const start = async () => {
   try {
-    await app.listen({ port: 3000 });
+    await app.listen({ port: 3000, host: "0.0.0.0" });
+    carregarUsuarios();
     console.log("🚀 Server running on http://localhost:3000");
   } catch (err) {
     app.log.error(err);
