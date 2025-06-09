@@ -5,15 +5,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const fastify_1 = __importDefault(require("fastify"));
 const fastify_jwt_1 = __importDefault(require("fastify-jwt"));
-const usuario_1 = __importDefault(require("./routes/usuario"));
-const receitas_1 = __importDefault(require("./routes/receitas"));
+const usuarios_1 = __importDefault(require("./routes/usuarios"));
 const auth_1 = require("./utils/auth");
 const app = (0, fastify_1.default)();
 app.register(fastify_jwt_1.default, {
     secret: "supersecret", // Troque por variável de ambiente em produção
 });
-app.register(usuario_1.default, { prefix: "/api/usuario" });
-app.register(receitas_1.default, { prefix: "/api/receitas" });
+app.register(usuarios_1.default, { prefix: "/api" });
+// app.register(receitasRoutes, { prefix: "/api/receitas" });
 app.get("/", async (_, reply) => {
     return reply.send({ message: "API is running" });
 });

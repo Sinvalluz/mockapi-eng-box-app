@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "email": "ana.souza@testemail.com",
     "token": "token001",
     "senha": "senhaAna123",
@@ -7,9 +8,11 @@
     "telefone": "11999887766",
     "nivelConsciencia": 2,
     "isMonitor": true,
-    "profilePhotoUrl": "https://cataas.com/cat?id=5"
+    "profilePhotoUrl": "https://cataas.com/cat?id=5",
+    "posts": []
   },
   {
+    "id": 2,
     "email": "bruno.lima@empresa.org",
     "token": "token002",
     "senha": "brunoSenha321",
@@ -17,9 +20,11 @@
     "telefone": "21988776655",
     "nivelConsciencia": 3,
     "isMonitor": false,
-    "profilePhotoUrl": "https://cataas.com/cat?id=4"
+    "profilePhotoUrl": "https://cataas.com/cat?id=4",
+    "posts": []
   },
   {
+    "id": 3,
     "email": "carla.mendes@teste.com",
     "token": "token003",
     "senha": "carlaPass456",
@@ -27,9 +32,11 @@
     "telefone": "31977665544",
     "nivelConsciencia": 1,
     "isMonitor": false,
-    "profilePhotoUrl": "https://cataas.com/cat?id=1"
+    "profilePhotoUrl": "https://cataas.com/cat?id=1",
+    "posts": []
   },
   {
+    "id": 4,
     "email": "davi.rocha@email.net",
     "token": "token004",
     "senha": "senhaDavi789",
@@ -37,9 +44,11 @@
     "telefone": "21912345678",
     "nivelConsciencia": 2,
     "isMonitor": true,
-    "profilePhotoUrl": "https://cataas.com/cat?id=2"
+    "profilePhotoUrl": "https://cataas.com/cat?id=2",
+    "posts": []
   },
   {
+    "id": 5,
     "email": "erika.lopes@demo.com",
     "token": "token005",
     "senha": "erikaSenha000",
@@ -47,9 +56,42 @@
     "telefone": "11933445566",
     "nivelConsciencia": 3,
     "isMonitor": false,
-    "profilePhotoUrl": "https://cataas.com/cat?id=3"
+    "profilePhotoUrl": "https://cataas.com/cat?id=3",
+    "posts": [
+      {
+        "id": "3f9c1742-4c21-4d10-a23f-b1a6c78ae8f6",
+        "dataCriacao": "2025-06-01T10:00:00Z",
+        "titulo": "Introdução à Inteligência Artificial",
+        "tema": "Tecnologia",
+        "subtemas": "IA, Machine Learning",
+        "conteudo": "Neste post vamos explorar os conceitos básicos de inteligência artificial e suas aplicações.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=1",
+            "name": "ia.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "id": "82e4741b-3e15-4df1-82e7-569a867e984e",
+        "dataCriacao": "2025-06-02T14:30:00Z",
+        "titulo": "Como manter uma alimentação saudável",
+        "tema": "Saúde",
+        "subtemas": "Nutrição, Bem-estar",
+        "conteudo": "Dicas e hábitos para manter uma alimentação equilibrada e saudável.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=2",
+            "name": "alimentacao.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      }
+    ]
   },
   {
+    "id": 6,
     "email": "felipe.santos@dominio.com",
     "token": "token006",
     "senha": "felipe123",
@@ -57,9 +99,57 @@
     "telefone": "11987654321",
     "nivelConsciencia": 1,
     "isMonitor": true,
-    "profilePhotoUrl": "https://cataas.com/cat?id=6"
+    "profilePhotoUrl": "https://cataas.com/cat?id=6",
+    "posts": [
+      {
+        "id": "6f8e8579-2197-42c1-a4b2-e33cb9404a58",
+        "dataCriacao": "2025-06-03T08:15:00Z",
+        "titulo": "Dicas de estudos para concursos",
+        "tema": "Educação",
+        "subtemas": "Concursos, Organização",
+        "conteudo": "Métodos eficientes para estudar e se preparar para concursos públicos.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=3",
+            "name": "estudos.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "id": "58b04a63-3dd6-49f4-9aa1-8ff5c3de7389",
+        "dataCriacao": "2025-06-04T12:00:00Z",
+        "titulo": "Como começar a investir",
+        "tema": "Finanças",
+        "subtemas": "Investimentos, Educação Financeira",
+        "conteudo": "Uma introdução ao mundo dos investimentos e como dar os primeiros passos.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=4",
+            "name": "investimentos.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "id": "b78a924e-11e0-463e-89c4-3908dc9c7e5a ",
+        "dataCriacao": "2025-06-06T16:00:00Z",
+        "titulo": "Como criar um portfólio online",
+        "tema": "Carreira",
+        "subtemas": "Design, Desenvolvimento",
+        "conteudo": "Passo a passo para montar um portfólio digital atrativo.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=6",
+            "name": "portfolio.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      }
+    ]
   },
   {
+    "id": 7,
     "email": "giovana.alves@testmail.com",
     "token": "token007",
     "senha": "gigiPass999",
@@ -67,9 +157,11 @@
     "telefone": "21976543210",
     "nivelConsciencia": 2,
     "isMonitor": false,
-    "profilePhotoUrl": "https://cataas.com/cat?id=7"
+    "profilePhotoUrl": "https://cataas.com/cat?id=7",
+    "posts": []
   },
   {
+    "id": 8,
     "email": "henrique.ferraz@exemplo.com",
     "token": "token008",
     "senha": "henriqueSenha456",
@@ -77,9 +169,57 @@
     "telefone": "11944556677",
     "nivelConsciencia": 3,
     "isMonitor": false,
-    "profilePhotoUrl": "https://cataas.com/cat?id=8"
+    "profilePhotoUrl": "https://cataas.com/cat?id=8",
+    "posts": [
+      {
+        "id": "2b6dbac7-7bd8-42fd-b055-4e2a1574cc8a ",
+        "dataCriacao": "2025-06-05T09:45:00Z",
+        "titulo": "10 receitas fáceis para o dia a dia",
+        "tema": "Culinária",
+        "subtemas": "Receitas, Cozinha prática",
+        "conteudo": "Receitas simples e rápidas para quem tem pouco tempo mas gosta de comer bem.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=5",
+            "name": "receitas.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "id": "764ffb2e-38f9-449c-b219-b634a2b8cbfc",
+        "dataCriacao": "2025-06-07T11:20:00Z",
+        "titulo": "Práticas sustentáveis no dia a dia",
+        "tema": "Meio Ambiente",
+        "subtemas": "Sustentabilidade, Consumo Consciente",
+        "conteudo": "Atitudes simples que ajudam a preservar o meio ambiente.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=7",
+            "name": "sustentabilidade.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "id": "cfd47017-78dc-4e7b-bdf0-1eeb0548e2f1",
+        "dataCriacao": "2025-06-07T13:50:00Z",
+        "titulo": "Planejamento financeiro para jovens",
+        "tema": "Finanças",
+        "subtemas": "Orçamento, Poupança",
+        "conteudo": "Como começar a se organizar financeiramente desde cedo.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=8",
+            "name": "planejamento.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      }
+    ]
   },
   {
+    "id": 9,
     "email": "isabela.ramos@site.com",
     "token": "token009",
     "senha": "isabela2025",
@@ -87,9 +227,42 @@
     "telefone": "31999887755",
     "nivelConsciencia": 2,
     "isMonitor": true,
-    "profilePhotoUrl": "https://cataas.com/cat?id=9"
+    "profilePhotoUrl": "https://cataas.com/cat?id=9",
+    "posts": [
+      {
+        "id": "9d1f9e0e-4889-4b52-b56f-d188cce5b3f6",
+        "dataCriacao": "2025-06-07T17:30:00Z",
+        "titulo": "Benefícios da meditação",
+        "tema": "Saúde Mental",
+        "subtemas": "Mindfulness, Relaxamento",
+        "conteudo": "Como a meditação pode ajudar no bem-estar físico e mental.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=9",
+            "name": "meditacao.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "id": "12b5fd08-7e6c-4e2c-b81e-bbcf1d86a6e9",
+        "dataCriacao": "2025-06-07T19:00:00Z",
+        "titulo": "Dicas para aprender inglês mais rápido",
+        "tema": "Idiomas",
+        "subtemas": "Inglês, Aprendizado",
+        "conteudo": "Estratégias práticas para melhorar seu inglês de forma eficaz.",
+        "fotos": [
+          {
+            "url": "https://picsum.photos/300/300?random=10",
+            "name": "ingles.jpg",
+            "type": "image/jpeg"
+          }
+        ]
+      }
+    ]
   },
   {
+    "id": 10,
     "email": "joao.pedro@meumail.com",
     "token": "token010",
     "senha": "joaoSenha111",
@@ -97,6 +270,7 @@
     "telefone": "21933221100",
     "nivelConsciencia": 1,
     "isMonitor": false,
-    "profilePhotoUrl": "https://cataas.com/cat?id=10"
+    "profilePhotoUrl": "https://cataas.com/cat?id=10",
+    "posts": []
   }
 ]

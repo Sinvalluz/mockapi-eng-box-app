@@ -1,6 +1,6 @@
 import Fastify from "fastify";
 import jwt from "fastify-jwt";
-import usuarioRoutes from "./routes/usuario";
+import usuarioRoutes from "./routes/usuarios";
 import receitasRoutes from "./routes/receitas";
 import { carregarUsuarios } from "./utils/auth";
 
@@ -10,8 +10,8 @@ app.register(jwt, {
   secret: "supersecret", // Troque por variável de ambiente em produção
 });
 
-app.register(usuarioRoutes, { prefix: "/api/usuario" });
-app.register(receitasRoutes, { prefix: "/api/receitas" });
+app.register(usuarioRoutes, { prefix: "/api" });
+// app.register(receitasRoutes, { prefix: "/api/receitas" });
 app.get("/", async (_, reply) => {
   return reply.send({ message: "API is running" });
 });

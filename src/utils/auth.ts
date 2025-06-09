@@ -1,7 +1,14 @@
 import { readFile } from "fs/promises";
 import path from "path";
 
+export interface UsuarioResponse {
+  email: string;
+  nome: string;
+  senha: string;
+}
+
 export interface Usuario {
+  id: number;
   email: string;
   token: string;
   senha: string;
@@ -10,6 +17,7 @@ export interface Usuario {
   nivelConsciencia: number;
   isMonitor: boolean;
   profilePhotoUrl: string;
+  posts?: Post[];
 }
 
 // Armazenamento simulado
@@ -23,8 +31,7 @@ export async function carregarUsuarios() {
 }
 
 export interface Post {
-  id: number;
-  idUsuario: string;
+  id: string;
   dataCriacao: string;
   titulo: string;
   tema: string;
@@ -34,7 +41,7 @@ export interface Post {
 }
 
 export interface Foto {
-  uri: string;
+  url: string;
   name: string;
   type: string;
 }
