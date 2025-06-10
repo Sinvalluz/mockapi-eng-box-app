@@ -1,14 +1,8 @@
 import Fastify from "fastify";
-import jwt from "fastify-jwt";
 import usuarioRoutes from "./routes/usuarios";
-import receitasRoutes from "./routes/receitas";
 import { carregarUsuarios } from "./utils/auth";
 
 const app = Fastify();
-
-app.register(jwt, {
-  secret: "supersecret", // Troque por variável de ambiente em produção
-});
 
 app.register(usuarioRoutes, { prefix: "/api" });
 // app.register(receitasRoutes, { prefix: "/api/receitas" });
